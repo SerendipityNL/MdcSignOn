@@ -1,0 +1,53 @@
+{
+  "name": "daltcore/mdc-sign-on",
+  "description": "MDC internal SSO",
+  "license": "MIT",
+  "keywords": [
+    "mdc",
+    "sign",
+    "on"
+  ],
+  "authors": [
+    {
+      "name": "",
+      "email": ""
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "guzzlehttp/guzzle": "^6.3",
+    "illuminate/support": "~5.5.0"
+  },
+  "require-dev": {
+    "orchestra/testbench": "~3.5.0",
+    "phpunit/phpunit": "~6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "DALTCORE\\MdcSignOn\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "DALTCORE\\MdcSignOn\\Tests\\": "tests"
+    },
+    "files": [
+      "vendor/phpunit/phpunit/src/Framework/Assert/Functions.php"
+    ]
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "DALTCORE\\MdcSignOn\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
