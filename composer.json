@@ -1,7 +1,7 @@
 {
   "name": "daltcore/mdc-sign-on",
   "description": "MDC internal SSO",
-  "license": "MIT",
+  "license": "DCPL",
   "keywords": [
     "mdc",
     "sign",
@@ -9,8 +9,8 @@
   ],
   "authors": [
     {
-      "name": "",
-      "email": ""
+      "name": "Ramon Smit",
+      "email": "rsmit@daltcore.com"
     }
   ],
   "require": {
