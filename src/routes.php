@@ -7,12 +7,12 @@ Route::group(['prefix' => 'api', 'middleware' => 'api'], function () {
 
         $client = new Client([
             // Base URI is used with relative requests
-            'base_uri' => config('oauth.url'),
+            'base_uri' => config('mdc-sign-on.url'),
             // You can set any number of default request options.
             'timeout'  => 2.0,
         ]);
 
-        $response = $client->request('GET', 'api/v1/oauth/auth/get/' . $uuid . '/' . config('oauth.app_token') , ['verify' => false]);
+        $response = $client->request('GET', 'api/v1/oauth/auth/get/' . $uuid . '/' . config('mdc-sign-on.app_token') , ['verify' => false]);
 
         $userInfo = json_decode($response->getBody()->getContents());
 
