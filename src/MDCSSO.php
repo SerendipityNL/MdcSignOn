@@ -44,7 +44,7 @@ class MDCSSO
      */
     protected function handleOAuth()
     {
-        return Cache::remember('MDC-SSO-OAUTH', 3600, function () {
+        return Cache::remember('MDC-SSO-OAUTH', 60, function () {
             $client = new Client([
                 // Base URI is used with relative requests
                 'base_uri' => config('mdc-sign-on.url'),
