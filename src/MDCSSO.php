@@ -20,7 +20,6 @@ class MDCSSO
      */
     public function handle($request, Closure $next)
     {
-
         if ($request->session()->has('user')) {
             Auth::login(unserialize($request->session()->get('user')));
         } else {
@@ -28,8 +27,6 @@ class MDCSSO
         }
 
         $oauth = $this->handleOAuth();
-
-
 
         if (isset($oauth->code) && $oauth->code == 403) {
             return redirect()->to($oauth->login_url);
