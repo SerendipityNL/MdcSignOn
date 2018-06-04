@@ -1,7 +1,7 @@
 {
   "name": "daltcore/mdc-sign-on",
   "description": "MDC internal SSO",
-  "license": "DCPL",
+  "license": "proprietary",
   "keywords": [
     "mdc",
     "sign",
