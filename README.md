@@ -49,5 +49,5 @@ instead of using the issue tracker.
 
 ## Credits
 
-- [](https://github.com/daltcore/mdc-sign-on)
-- [All contributors](https://github.com/daltcore/mdc-sign-on/graphs/contributors)
+- [](https://github.com/DALTCORE/MdcSignOn)
+- [All contributors](https://github.com/DALTCORE/MdcSignOn/graphs/contributors)
